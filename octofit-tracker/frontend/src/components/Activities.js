@@ -4,7 +4,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('/api/activities')
+    fetch('https://solid-space-enigma-rpq5x5p4r63p7qw-8000.app.github.dev/api/activities')
       .then(response => response.json())
       .then(data => setActivities(data))
       .catch(error => console.error('Error fetching activities:', error));

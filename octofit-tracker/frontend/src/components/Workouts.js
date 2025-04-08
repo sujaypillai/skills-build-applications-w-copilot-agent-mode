@@ -4,7 +4,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://solid-space-enigma-rpq5x5p4r63p7qw.app.github.dev:8000/api/workouts/')
+    fetch('https://solid-space-enigma-rpq5x5p4r63p7qw.app.github.dev/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data));
   }, []);

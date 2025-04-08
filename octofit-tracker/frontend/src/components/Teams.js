@@ -4,7 +4,7 @@ function Teams() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch('https://solid-space-enigma-rpq5x5p4r63p7qw-8000.app.github.dev/api/teams')
+    fetch('https://solid-space-enigma-rpq5x5p4r63p7qw-8000.app.github.dev/api/teams/')
       .then(response => response.json())
       .then(data => setTeams(data));
   }, []);

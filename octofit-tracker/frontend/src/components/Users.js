@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://solid-space-enigma-rpq5x5p4r63p7qw-8000.app.github.dev/api/users')
+    fetch('https://solid-space-enigma-rpq5x5p4r63p7qw-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);
